@@ -10,17 +10,22 @@ import {
 
 const { md, gameName } = Astro.props
 
-const { Content } = await import("../contents/" + md)
-
+const games = await Astro.glob("../contents/games/*.md")
+const Content = games
+  .find((x) => {
+      const paths = x.file.split('/')
+      return paths[paths.length - 1] === md
+  })!
+  .Content
 ---
 
 <div class="col-span-1 row-span-1">
     <Card>
         <CardContent>
             <div class="mt-6 space-y-3">
-                <h3 class="font-bold text-xl">The Golden Age</h3>
+                <h3 class="font-bold text-xl">{gameName}</h3>
                 <div class="content">
-                    <Content />
+                    <Content/>
                 </div>
             </div>
         </CardContent>
