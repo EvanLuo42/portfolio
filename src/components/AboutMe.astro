@@ -1,0 +1,23 @@
+---
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from "./ui/card";
+
+import {Content as AboutMe} from '@/contents/about-me.md';
+---
+
+<div class="col-span-1 row-span-2">
+    <Card className="h-full">
+        <CardHeader>
+            <CardTitle>About me</CardTitle>
+        </CardHeader>
+        <CardContent>
+            <AboutMe />
+        </CardContent>
+    </Card>
+</div>

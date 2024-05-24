@@ -1,0 +1,34 @@
+---
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from "./ui/card";
+
+const { md, gameName } = Astro.props
+
+const { Content } = await import("../contents/" + md)
+
+---
+
+<div class="col-span-1 row-span-1">
+    <Card>
+        <CardContent>
+            <div class="mt-6 space-y-3">
+                <h3 class="font-bold text-xl">The Golden Age</h3>
+                <div class="content">
+                    <Content />
+                </div>
+            </div>
+        </CardContent>
+    </Card>
+</div>
+
+<style>
+    .content {
+        hyphens: auto;
+    }
+</style>
