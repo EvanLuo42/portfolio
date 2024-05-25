@@ -20,20 +20,14 @@ const Content = games
 ---
 
 <div class="col-span-1 row-span-1">
-    <Card>
+    <Card className="hover:cursor-pointer hover:border-primary">
         <CardContent>
             <div class="mt-6 space-y-3">
                 <h3 class="font-bold text-xl">{gameName}</h3>
-                <div class="content">
+                <div class="text-justify hyphens-auto">
                     <Content/>
                 </div>
             </div>
         </CardContent>
     </Card>
 </div>
-
-<style>
-    .content {
-        hyphens: auto;
-    }
-</style>
