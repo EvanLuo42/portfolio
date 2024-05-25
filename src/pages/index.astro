@@ -2,19 +2,16 @@
 import '@/styles/globals.css'
 import Layout from '@/layouts/Layout.astro';
 import IntroCard from '@/components/IntroCard.astro'
-import AboutMe from "../components/AboutMe.astro";
 import Game from "../components/Game.astro";
-import Section from "../components/Section.astro"
 import YoutubeVideo from "../components/YoutubeVideo.astro";
 ---
 
 <Layout title="Evan Luo Portfolio">
 	<div class="grid xl:grid-cols-4 md:grid-cols-3 gap-4 w-full h-full">
 		<IntroCard></IntroCard>
-		<AboutMe></AboutMe>
-		<Section title="Video" className="hidden xl:block"></Section>
 		<YoutubeVideo/>
-		<Section title="Video Games"/>
+		<Game gameName="The Golden Age" md="the-golden-age.md"/>
+		<Game gameName="The Golden Age" md="the-golden-age.md"/>
 		<Game gameName="The Golden Age" md="the-golden-age.md"/>
 		<Game gameName="The Golden Age" md="the-golden-age.md"/>
 		<Game gameName="The Golden Age" md="the-golden-age.md"/>
