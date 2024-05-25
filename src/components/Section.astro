@@ -4,10 +4,10 @@ import {
   CardContent
 } from "./ui/card";
 
-const { title } = Astro.props
+const { title, className } = Astro.props
 ---
 
-<div class="col-span-1 row-span-1 hidden xl:block">
+<div class:list={["col-span-1 row-span-1", className]}>
     <Card className="h-full">
         <CardContent className="h-full flex items-center justify-center mt-3">
             <h3 class="text-4xl font-bold">{title}</h3>
