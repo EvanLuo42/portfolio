@@ -1,1 +1,1 @@
-In _The Golden Age_, players take on the roles of a Playwright, Talent Agent, Noble, and Stage Designer, each managing unique resources to plan theatrical seasons in order to save a theater be on the brink of bankrupt. 
+Players take on the roles of a **playwright**, **talent agent**, and **stage designer**, planing theatrical seasons, saving a theater be on the brink of bankrupt.

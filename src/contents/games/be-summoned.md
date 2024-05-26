@@ -1,1 +1,1 @@
-The human kingdom, once ravaged by giants, was saved by the spirits. Later, both the spirit kingdom suffering from another spirit kingdom and the giants, suffering under a despotic Giant Lord, turned to the human king for help.
+A game made in Ludum Dare 72h. The player act as the king of the human kingdom helping spirits and giants fight against their enemies.
