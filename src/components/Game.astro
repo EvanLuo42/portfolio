@@ -7,6 +7,9 @@ import {
   CardHeader,
   CardTitle
 } from "./ui/card";
+import {ImageMetadata} from "astro";
+
+import {Image} from "astro:assets"
 
 const { md, gameName, cover, path } = Astro.props
 
@@ -17,6 +20,8 @@ const Content = games
       return paths[paths.length - 1] === md
   })!
   .Content
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
+if (!images[cover]) throw new Error(`"${cover}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
 <div id={path} class="col-span-1 row-span-1">
@@ -24,7 +29,7 @@ const Content = games
         <Card className="h-full hover:cursor-pointer hover:border-primary relative overflow-clip">
             <CardContent className="p-0">
                 <div class="w-full h-40">
-                    <img class="w-full h-full object-cover" src={cover} alt="game-cover">
+                    <Image class="w-full h-full object-cover" src={images[cover]()} alt="game-cover"/>
                 </div>
                 <div class="m-4 space-y-1">
                     <h3 class="font-bold text-xl">{gameName}</h3>
