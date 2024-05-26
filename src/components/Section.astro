@@ -7,10 +7,6 @@ import {
 const { title, className } = Astro.props
 ---
 
-<div class:list={["col-span-1 row-span-1", className]}>
-    <Card className="h-full">
-        <CardContent className="h-full flex items-center justify-center mt-3">
-            <h3 class="text-4xl font-bold">{title}</h3>
-        </CardContent>
-    </Card>
+<div class:list={["col-span-1 xl:col-span-4 md:col-span-3 row-span-1", className]}>
+    <h3 class="text-2xl font-bold">{title}</h3>
 </div>

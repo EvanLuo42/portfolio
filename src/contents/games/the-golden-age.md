@@ -1,1 +1,1 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at turpis ultricies, bibendum orci vitae, placerat elit.
+In _The Golden Age_, players take on the roles of a Playwright, Talent Agent, Noble, and Stage Designer, each managing unique resources to plan theatrical seasons in order to save a theater be on the brink of bankrupt. 

@@ -1,0 +1,1 @@
+Once upon a time, there was a clown who was enslaved by a sinister circus and performed dangerous and comical performances every day. One day, he decided to escape from this sinister circus.
