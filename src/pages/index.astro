@@ -2,21 +2,25 @@
 import '@/styles/globals.css'
 import Layout from '@/layouts/Layout.astro';
 import IntroCard from '@/components/IntroCard.astro'
-import Game from "../components/Game.astro";
-import YoutubeVideo from "../components/YoutubeVideo.astro";
-import Section from "../components/Section.astro";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "@/components/ui/carousel"
+
+import { GamesCarousel } from "../components/games-carousel";
+import {Card, CardContent} from "../components/ui/card";
+import React from "react";
+import BeSummoned from "../contents/games/BeSummoned.astro";
+import TheGoldenAge from "../contents/games/TheGoldenAge.astro";
 ---
 
 <Layout title="Evan Luo Portfolio">
-	<div class="grid xl:grid-cols-4 md:grid-cols-3 gap-4 w-full h-full">
-		<IntroCard></IntroCard>
-		<YoutubeVideo title="Self Introduction" videoCode="Ivuy9QYLFVY"/>
-		<Game path="the-golden-age" gameName="The Golden Age" md="the-golden-age.md" cover="/src/assets/the-golden-age.png"/>
-		<Game path="escape-from-the-circus" gameName="Escape From the Circus" md="escape-from-the-circus.md" cover="/src/assets/escape-from-the-circus.png"/>
-		<Section title="2024 Games"/>
-		<Game path="be-summoned" gameName="Be Summoned" md="be-summoned.md" cover="/src/assets/be-summoned.png"/>
-		<Game path="the-golden-age" gameName="The Golden Age" md="the-golden-age.md" cover="/src/assets/the-golden-age.png"/>
-		<Game path="the-golden-age" gameName="The Golden Age" md="the-golden-age.md" cover="/src/assets/the-golden-age.png"/>
-		<Game path="the-golden-age" gameName="The Golden Age" md="the-golden-age.md" cover="/src/assets/the-golden-age.png"/>
-	</div>
+	<IntroCard></IntroCard>
+	<GamesCarousel client:load>
+		<BeSummoned slot="summoned"/>
+		<TheGoldenAge slot="golden"/>
+	</GamesCarousel>
 </Layout>

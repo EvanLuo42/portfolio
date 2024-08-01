@@ -1,1 +1,0 @@
-Players take on the roles of a **playwright**, **talent agent**, and **stage designer**, planing theatrical seasons, saving a theater be on the brink of bankrupt.

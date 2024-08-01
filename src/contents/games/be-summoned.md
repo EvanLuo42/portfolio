@@ -1,1 +1,0 @@
-A game made in Ludum Dare 72h. The player act as the king of the human kingdom helping spirits and giants fight against their enemies.

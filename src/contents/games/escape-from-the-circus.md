@@ -1,1 +1,0 @@
-A game made during Global Game Jam. Players act as a clown escaping from a circus by smiling to the camera and control the stretching of the character.
