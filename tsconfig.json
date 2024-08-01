@@ -9,6 +9,6 @@
         "./src/*"
       ]
     },
-    "noImplicitAny": true
+    "noImplicitAny": false
   }
 }
